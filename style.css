@@ -30,6 +30,27 @@ body {
   overflow-x: hidden;
 }
 
+/* Skip Link for Accessibility */
+.skip-link {
+  position: absolute;
+  top: -40px;
+  left: 0;
+  background: var(--primary-color);
+  color: white;
+  padding: 0.75rem 1.5rem;
+  text-decoration: none;
+  font-weight: 600;
+  z-index: 10000;
+  border-radius: 0 0 8px 0;
+  transition: top 0.3s ease;
+}
+
+.skip-link:focus {
+  top: 0;
+  outline: 3px solid var(--secondary-color);
+  outline-offset: 2px;
+}
+
 .container {
   max-width: 1200px;
   margin: 0 auto;
@@ -1003,7 +1024,23 @@ section {
 .contact-form {
   display: flex;
   flex-direction: column;
-  gap: 1.25rem;
+  gap: 1.5rem;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.form-group label {
+  font-weight: 600;
+  color: var(--text-dark);
+  font-size: 0.95rem;
+}
+
+.form-group label span {
+  color: var(--secondary-color);
 }
 
 .contact-form input,
@@ -1329,6 +1366,244 @@ section {
   
   .about-features {
     grid-template-columns: 1fr;
+  }
+}
+
+/* Enhanced Focus Indicators for Accessibility */
+a:focus,
+button:focus,
+input:focus,
+textarea:focus,
+select:focus,
+.mobile-menu-toggle:focus {
+  outline: 3px solid var(--secondary-color);
+  outline-offset: 2px;
+}
+
+/* Focus visible for better keyboard navigation (modern browsers) */
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+textarea:focus-visible {
+  outline: 3px solid var(--secondary-color);
+  outline-offset: 2px;
+}
+
+/* Remove focus outline on mouse click (keeps it for keyboard) */
+a:focus:not(:focus-visible),
+button:focus:not(:focus-visible) {
+  outline: none;
+}
+
+/* PRINT STYLESHEET */
+@media print {
+  /* Hide non-essential elements */
+  .site-header,
+  .mobile-menu-toggle,
+  .hero-section,
+  .features-bar,
+  .skip-link,
+  .contact-form-wrapper,
+  .site-footer,
+  .social-links,
+  button,
+  .btn-primary,
+  .btn-submit,
+  .service-cta,
+  .nav-cta {
+    display: none !important;
+  }
+
+  /* Reset colors for print */
+  * {
+    background: white !important;
+    color: black !important;
+    box-shadow: none !important;
+    text-shadow: none !important;
+  }
+
+  /* Body adjustments */
+  body {
+    font-size: 12pt;
+    line-height: 1.5;
+    max-width: 100%;
+  }
+
+  /* Section spacing */
+  section {
+    page-break-inside: avoid;
+    padding: 1rem 0;
+    margin-bottom: 1rem;
+  }
+
+  /* Headings */
+  h1, h2, h3, h4, h5, h6 {
+    page-break-after: avoid;
+    page-break-inside: avoid;
+    font-weight: bold;
+  }
+
+  h1 {
+    font-size: 24pt;
+  }
+
+  h2 {
+    font-size: 20pt;
+    border-bottom: 2px solid black;
+    padding-bottom: 0.25rem;
+    margin-top: 1rem;
+  }
+
+  h3 {
+    font-size: 16pt;
+  }
+
+  /* Links */
+  a {
+    text-decoration: underline;
+  }
+
+  a[href^="http"]:after {
+    content: " (" attr(href) ")";
+    font-size: 10pt;
+    font-weight: normal;
+  }
+
+  a[href^="#"]:after,
+  a[href^="tel:"]:after,
+  a[href^="mailto:"]:after {
+    content: "";
+  }
+
+  /* Images */
+  img {
+    max-width: 100% !important;
+    page-break-inside: avoid;
+  }
+
+  /* Contact information - show prominently */
+  .contact-details {
+    border: 2px solid black;
+    padding: 1rem;
+    margin: 1rem 0;
+    page-break-inside: avoid;
+  }
+
+  .contact-item {
+    margin-bottom: 0.5rem;
+  }
+
+  /* Service cards */
+  .service-card,
+  .why-card,
+  .testimonial-card {
+    border: 1px solid black !important;
+    padding: 0.5rem;
+    margin-bottom: 0.5rem;
+    page-break-inside: avoid;
+  }
+
+  /* Lists */
+  ul, ol {
+    page-break-inside: avoid;
+  }
+
+  /* Stats */
+  .stat-box {
+    border: 1px solid black !important;
+    padding: 0.5rem;
+    text-align: center;
+  }
+
+  /* Page breaks */
+  .about-section,
+  .services-section,
+  .why-section,
+  .testimonials-section,
+  .contact-section {
+    page-break-before: auto;
+  }
+
+  /* Grids for print */
+  .services-grid,
+  .why-grid,
+  .testimonials-grid {
+    display: block;
+  }
+
+  .service-card,
+  .why-card,
+  .testimonial-card {
+    margin-bottom: 1rem;
+  }
+
+  /* Header on each page */
+  @page {
+    margin: 2cm;
+  }
+
+  @page :first {
+    margin-top: 1cm;
+  }
+
+  /* Print-specific header */
+  body::before {
+    content: "Brock Security - Professional Security Camera Installation";
+    display: block;
+    font-size: 18pt;
+    font-weight: bold;
+    text-align: center;
+    padding-bottom: 1rem;
+    border-bottom: 3px solid black;
+    margin-bottom: 1rem;
+  }
+
+  /* Print footer with contact info */
+  body::after {
+    content: "Phone: (606) 275-5449 | Email: support@brocksecurity.net | Web: brocksecurity.net";
+    display: block;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+    font-size: 10pt;
+    padding: 0.5rem;
+    border-top: 1px solid black;
+  }
+}
+
+/* High Contrast Mode Support */
+@media (prefers-contrast: high) {
+  :root {
+    --primary-color: #0047AB;
+    --primary-dark: #003380;
+    --text-dark: #000000;
+    --text-light: #1a1a1a;
+    --border-color: #000000;
+  }
+
+  .service-card,
+  .why-card,
+  .testimonial-card,
+  .stat-box {
+    border: 2px solid var(--text-dark);
+  }
+}
+
+/* Reduced Motion Support */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+
+  .hero-image-placeholder {
+    animation: none;
   }
 }
 

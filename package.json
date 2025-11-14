@@ -1,0 +1,66 @@
+{
+  "name": "brocksecurity",
+  "version": "1.0.0",
+  "description": "Professional security camera installation serving Eastern Kentucky",
+  "main": "index.html",
+  "scripts": {
+    "start": "python -m http.server 8000",
+    "lint:js": "eslint script.js",
+    "lint:css": "stylelint \"**/*.css\"",
+    "format": "prettier --write \"**/*.{html,css,js,json,md}\"",
+    "format:check": "prettier --check \"**/*.{html,css,js,json,md}\"",
+    "validate": "npm run lint:js && npm run lint:css && npm run format:check"
+  },
+  "keywords": [
+    "security",
+    "camera",
+    "installation",
+    "surveillance",
+    "eastern-kentucky",
+    "pikeville",
+    "hazard",
+    "prestonsburg"
+  ],
+  "author": "Brock Security",
+  "license": "UNLICENSED",
+  "private": true,
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Br0ck25/brocksecurity.git"
+  },
+  "devDependencies": {
+    "eslint": "^8.57.0",
+    "prettier": "^3.2.5",
+    "stylelint": "^16.2.1",
+    "stylelint-config-standard": "^36.0.0"
+  },
+  "prettier": {
+    "semi": true,
+    "singleQuote": true,
+    "tabWidth": 2,
+    "trailingComma": "es5",
+    "printWidth": 100
+  },
+  "eslintConfig": {
+    "env": {
+      "browser": true,
+      "es2021": true
+    },
+    "extends": "eslint:recommended",
+    "parserOptions": {
+      "ecmaVersion": 12,
+      "sourceType": "module"
+    },
+    "rules": {
+      "no-unused-vars": "warn",
+      "no-console": "off"
+    }
+  },
+  "stylelint": {
+    "extends": "stylelint-config-standard",
+    "rules": {
+      "selector-class-pattern": null,
+      "custom-property-pattern": null
+    }
+  }
+}
