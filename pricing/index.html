@@ -1,0 +1,1541 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Packages & Pricing - Security Camera Installation | Brock Security - Eastern Kentucky</title>
+  <meta name="description" content="Transparent pricing for professional security camera installation in Eastern Kentucky. Custom quotes for homes and businesses. Serving Pikeville, Hazard, Prestonsburg, and surrounding areas.">
+  
+  <!-- Open Graph / Social Media -->
+  <meta property="og:title" content="Packages & Pricing - Security Camera Installation | Brock Security">
+  <meta property="og:description" content="Professional security camera installation pricing for Eastern Kentucky. Free quotes, transparent pricing, same-week service.">
+  <meta property="og:image" content="https://brocksecurity.net/images/logo.png">
+  <meta property="og:url" content="https://brocksecurity.net/pricing">
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="images/favicon.png">
+  
+  <style>
+    /* RESET & BASE */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    :root {
+      --primary-color: #1975b0;
+      --primary-dark: #155a8a;
+      --secondary-color: #2d3748;
+      --text-dark: #1a202c;
+      --text-light: #4a5568;
+      --bg-light: #f7fafc;
+      --bg-white: #ffffff;
+      --border-color: #e2e8f0;
+      --shadow: 0 10px 30px rgba(0,0,0,0.1);
+      --shadow-hover: 0 15px 40px rgba(0,0,0,0.15);
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+      line-height: 1.6;
+      color: var(--text-dark);
+      background: var(--bg-white);
+    }
+
+    /* HEADER */
+    .site-header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      background: rgba(255, 255, 255, 0.95);
+      backdrop-filter: blur(10px);
+      box-shadow: 0 2px 15px rgba(0,0,0,0.08);
+      z-index: 1000;
+      transition: all 0.3s ease;
+    }
+
+    .site-header.scrolled {
+      background: rgba(255, 255, 255, 0.98);
+      box-shadow: 0 2px 20px rgba(0,0,0,0.12);
+    }
+
+    .header-container {
+      max-width: 1400px;
+      margin: 0 auto;
+      padding: 1.2rem 2rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .logo-link {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      text-decoration: none;
+      transition: transform 0.3s ease;
+    }
+
+    .logo-link:hover {
+      transform: translateY(-2px);
+    }
+
+    .logo-img {
+      height: 50px;
+      width: auto;
+    }
+
+    .logo-text {
+      font-size: 1.6rem;
+      font-weight: 700;
+      color: var(--primary-color);
+    }
+
+    .main-nav {
+      display: flex;
+      align-items: center;
+      gap: 2.5rem;
+    }
+
+    .main-nav a {
+      text-decoration: none;
+      color: var(--text-dark);
+      font-weight: 600;
+      font-size: 1rem;
+      transition: color 0.3s ease;
+      position: relative;
+    }
+
+    .main-nav a:not(.nav-cta):hover {
+      color: var(--primary-color);
+    }
+
+    .main-nav a:not(.nav-cta)::after {
+      content: '';
+      position: absolute;
+      bottom: -5px;
+      left: 0;
+      width: 0;
+      height: 2px;
+      background: var(--primary-color);
+      transition: width 0.3s ease;
+    }
+
+    .main-nav a:not(.nav-cta):hover::after {
+      width: 100%;
+    }
+
+    .nav-cta {
+      background: var(--primary-color);
+      color: white !important;
+      padding: 0.8rem 2rem;
+      border-radius: 50px;
+      transition: all 0.3s ease;
+      box-shadow: 0 4px 15px rgba(25, 117, 176, 0.2);
+    }
+
+    .nav-cta:hover {
+      background: var(--primary-dark);
+      transform: translateY(-2px);
+      box-shadow: 0 6px 20px rgba(25, 117, 176, 0.3);
+    }
+
+    .mobile-menu-toggle {
+      display: none;
+      flex-direction: column;
+      gap: 5px;
+      background: none;
+      border: none;
+      cursor: pointer;
+      padding: 8px;
+    }
+
+    .mobile-menu-toggle span {
+      width: 28px;
+      height: 3px;
+      background: var(--primary-color);
+      border-radius: 2px;
+      transition: all 0.3s ease;
+    }
+
+    .mobile-menu-toggle.active span:nth-child(1) {
+      transform: rotate(45deg) translate(8px, 8px);
+    }
+
+    .mobile-menu-toggle.active span:nth-child(2) {
+      opacity: 0;
+    }
+
+    .mobile-menu-toggle.active span:nth-child(3) {
+      transform: rotate(-45deg) translate(8px, -8px);
+    }
+
+    /* CONTAINER */
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+
+    /* SECTION COMMONS */
+    section {
+      padding: 6rem 0;
+    }
+
+    .section-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      background: rgba(25, 117, 176, 0.1);
+      padding: 0.5rem 1.25rem;
+      border-radius: 50px;
+      color: var(--primary-color);
+      font-size: 0.9rem;
+      font-weight: 600;
+      margin-bottom: 1.5rem;
+    }
+
+    .section-header {
+      text-align: center;
+      max-width: 800px;
+      margin: 0 auto 4rem;
+    }
+
+    .section-header h2 {
+      font-size: 2.75rem;
+      color: var(--text-dark);
+      margin-bottom: 1rem;
+      font-weight: 800;
+    }
+
+    .section-header p {
+      font-size: 1.2rem;
+      color: var(--text-light);
+      line-height: 1.8;
+    }
+
+    /* PRICING HERO */
+    .pricing-hero {
+      background: linear-gradient(135deg, var(--primary-color) 0%, var(--primary-dark) 100%);
+      padding: 8rem 0 4rem;
+      text-align: center;
+      color: white;
+    }
+
+    .pricing-hero h1 {
+      font-size: 3.5rem;
+      font-weight: 800;
+      margin-bottom: 1.5rem;
+    }
+
+    .pricing-hero p {
+      font-size: 1.3rem;
+      opacity: 0.95;
+      max-width: 700px;
+      margin: 0 auto 2rem;
+      line-height: 1.8;
+    }
+
+    .pricing-highlight {
+      background: rgba(255, 255, 255, 0.15);
+      backdrop-filter: blur(10px);
+      padding: 1.5rem;
+      border-radius: 15px;
+      display: inline-block;
+      margin-top: 2rem;
+    }
+
+    .pricing-highlight strong {
+      font-size: 1.2rem;
+      display: block;
+      margin-bottom: 0.5rem;
+    }
+
+    /* PRICING CARDS */
+    .pricing-section {
+      background: var(--bg-light);
+    }
+
+    .pricing-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 2rem;
+      margin-bottom: 4rem;
+    }
+
+    .pricing-card {
+      background: white;
+      border-radius: 10px;
+      padding: 2rem 1.5rem;
+      box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+      transition: all 0.3s ease;
+      position: relative;
+      border: 2px solid #e2e8f0;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .pricing-card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 15px 40px rgba(0,0,0,0.12);
+      border-color: var(--primary-color);
+    }
+
+    .pricing-card.featured {
+      border-color: var(--primary-color);
+      border-width: 3px;
+    }
+
+    .pricing-card.best-value {
+      border-color: #28a745;
+      border-width: 3px;
+    }
+
+    .pricing-badge {
+      position: absolute;
+      top: 15px;
+      right: 15px;
+      padding: 0.4rem 1rem;
+      border-radius: 5px;
+      font-size: 0.8rem;
+      font-weight: 700;
+      color: white;
+      z-index: 10;
+    }
+
+    .pricing-badge.blue {
+      background: #1975b0;
+    }
+
+    .pricing-badge.green {
+      background: #28a745;
+    }
+
+    .camera-image {
+      width: 100%;
+      height: 180px;
+      object-fit: contain;
+      margin-bottom: 1.5rem;
+      background: #f8f9fa;
+      border-radius: 10px;
+      padding: 1rem;
+    }
+
+    .pricing-card-header {
+      text-align: center;
+      margin-bottom: 1.5rem;
+    }
+
+    .pricing-card-header h3 {
+      font-size: 1.5rem;
+      color: var(--primary-color);
+      margin-bottom: 1rem;
+      font-weight: 700;
+    }
+
+    .pricing-card-header .subtitle {
+      color: var(--text-light);
+      font-size: 0.9rem;
+      display: none;
+    }
+
+    .price {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      margin: 1.5rem 0;
+    }
+
+    .price-label {
+      font-size: 0.9rem;
+      color: var(--text-light);
+      margin-bottom: 0.25rem;
+    }
+
+    .price-amount {
+      font-size: 3rem;
+      font-weight: 800;
+      color: var(--primary-color);
+      line-height: 1;
+    }
+
+    .price-period {
+      font-size: 1rem;
+      color: var(--text-light);
+      margin-top: 0.25rem;
+    }
+
+    .price-note {
+      text-align: center;
+      color: var(--text-light);
+      font-size: 0.85rem;
+      margin-top: 0.5rem;
+      font-style: italic;
+    }
+
+    .pricing-features {
+      list-style: none;
+      margin: 1.5rem 0;
+      flex-grow: 1;
+    }
+
+    .pricing-features li {
+      display: flex;
+      align-items: flex-start;
+      gap: 0.75rem;
+      padding: 0.5rem 0;
+      font-size: 0.95rem;
+    }
+
+    .pricing-features svg {
+      color: #28a745;
+      flex-shrink: 0;
+      margin-top: 0.15rem;
+      width: 18px;
+      height: 18px;
+    }
+
+    .pricing-features span {
+      color: var(--text-dark);
+      line-height: 1.5;
+    }
+
+    .btn-pricing {
+      display: block;
+      width: 100%;
+      padding: 1rem;
+      background: var(--primary-color);
+      color: white;
+      text-align: center;
+      text-decoration: none;
+      border-radius: 5px;
+      font-weight: 700;
+      font-size: 1rem;
+      transition: all 0.3s;
+      border: none;
+      cursor: pointer;
+      margin-top: auto;
+    }
+
+    .btn-pricing:hover {
+      background: var(--primary-dark);
+      transform: translateY(-2px);
+      box-shadow: 0 8px 20px rgba(25, 117, 176, 0.3);
+    }
+
+    .btn-pricing.green {
+      background: #28a745;
+    }
+
+    .btn-pricing.green:hover {
+      background: #218838;
+    }
+
+    .btn-secondary {
+      background: white;
+      color: var(--primary-color);
+      border: 2px solid var(--primary-color);
+    }
+
+    .btn-secondary:hover {
+      background: var(--primary-color);
+      color: white;
+    }
+
+    /* CUSTOM PRICING */
+    .custom-pricing {
+      background: var(--primary-color);
+      color: white;
+      padding: 4rem;
+      border-radius: 20px;
+      text-align: center;
+      margin-top: 3rem;
+    }
+
+    .custom-pricing h3 {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+      font-weight: 800;
+    }
+
+    .custom-pricing p {
+      font-size: 1.2rem;
+      margin-bottom: 2rem;
+      opacity: 0.95;
+      line-height: 1.8;
+    }
+
+    .custom-pricing .btn-pricing {
+      background: white;
+      color: var(--primary-color);
+      max-width: 400px;
+      margin: 0 auto;
+    }
+
+    .custom-pricing .btn-pricing:hover {
+      background: var(--bg-light);
+      transform: translateY(-3px);
+    }
+
+    /* FACTORS SECTION */
+    .factors-section {
+      background: white;
+    }
+
+    .factors-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 2rem;
+      margin-top: 3rem;
+    }
+
+    .factor-card {
+      background: var(--bg-light);
+      padding: 2.5rem;
+      border-radius: 10px;
+      border-left: 5px solid var(--primary-color);
+      transition: all 0.3s ease;
+    }
+
+    .factor-card:hover {
+      transform: translateX(10px);
+      box-shadow: var(--shadow);
+    }
+
+    .factor-card-header {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .factor-card-header svg {
+      color: var(--primary-color);
+    }
+
+    .factor-card h4 {
+      font-size: 1.5rem;
+      color: var(--text-dark);
+      font-weight: 700;
+    }
+
+    .factor-card p {
+      color: var(--text-light);
+      line-height: 1.8;
+      font-size: 1.05rem;
+    }
+
+    /* FAQ SECTION */
+    .faq-section {
+      background: var(--bg-light);
+    }
+
+    .faq-list {
+      max-width: 900px;
+      margin: 0 auto;
+    }
+
+    .faq-item {
+      background: white;
+      margin-bottom: 1.5rem;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+    }
+
+    .faq-question {
+      width: 100%;
+      padding: 1.75rem 2rem;
+      background: white;
+      border: none;
+      text-align: left;
+      font-size: 1.15rem;
+      font-weight: 700;
+      color: var(--text-dark);
+      cursor: pointer;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      transition: all 0.3s;
+    }
+
+    .faq-question:hover {
+      background: var(--bg-light);
+      color: var(--primary-color);
+    }
+
+    .faq-question svg {
+      transition: transform 0.3s;
+      color: var(--primary-color);
+    }
+
+    .faq-question.active svg {
+      transform: rotate(180deg);
+    }
+
+    .faq-answer {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.3s ease;
+    }
+
+    .faq-answer-content {
+      padding: 0 2rem 1.75rem 2rem;
+      color: var(--text-light);
+      line-height: 1.8;
+      font-size: 1.05rem;
+    }
+
+    /* CTA SECTION */
+    .cta-section {
+      background: linear-gradient(135deg, var(--primary-color) 0%, var(--primary-dark) 100%);
+      color: white;
+      text-align: center;
+      padding: 6rem 2rem;
+    }
+
+    .cta-section h2 {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+      font-weight: 800;
+    }
+
+    .cta-section p {
+      font-size: 1.3rem;
+      margin-bottom: 2.5rem;
+      opacity: 0.95;
+    }
+
+    .cta-buttons {
+      display: flex;
+      gap: 1.5rem;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    .btn-cta {
+      padding: 1.25rem 3rem;
+      font-size: 1.2rem;
+      border-radius: 30px;
+      text-decoration: none;
+      font-weight: 700;
+      transition: all 0.3s;
+      display: inline-block;
+    }
+
+    .btn-cta-primary {
+      background: white;
+      color: var(--primary-color);
+    }
+
+    .btn-cta-primary:hover {
+      background: var(--bg-light);
+      transform: translateY(-3px);
+      box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+    }
+
+    .btn-cta-secondary {
+      background: transparent;
+      color: white;
+      border: 2px solid white;
+    }
+
+    .btn-cta-secondary:hover {
+      background: white;
+      color: var(--primary-color);
+    }
+
+    /* FOOTER */
+    .site-footer {
+      background: var(--text-dark);
+      color: white;
+      padding: 4rem 0 2rem;
+    }
+
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 2fr 1fr 1fr;
+      gap: 3rem;
+      margin-bottom: 3rem;
+    }
+
+    .footer-brand img {
+      height: 50px;
+      margin-bottom: 1rem;
+    }
+
+    .footer-brand h3 {
+      font-size: 1.5rem;
+      margin-bottom: 0.75rem;
+    }
+
+    .footer-brand p {
+      color: rgba(255,255,255,0.7);
+      line-height: 1.7;
+      margin-bottom: 1.5rem;
+    }
+
+    .social-links {
+      display: flex;
+      gap: 1rem;
+    }
+
+    .social-links a {
+      width: 40px;
+      height: 40px;
+      background: rgba(255,255,255,0.1);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      transition: all 0.3s ease;
+    }
+
+    .social-links a:hover {
+      background: var(--primary-color);
+      transform: translateY(-3px);
+    }
+
+    .footer-links h4,
+    .footer-contact h4 {
+      font-size: 1.1rem;
+      margin-bottom: 1.25rem;
+      font-weight: 700;
+    }
+
+    .footer-links ul,
+    .footer-contact ul {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 0.75rem;
+    }
+
+    .footer-links a,
+    .footer-contact a {
+      color: rgba(255,255,255,0.7);
+      text-decoration: none;
+      transition: color 0.3s;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    .footer-links a:hover,
+    .footer-contact a:hover {
+      color: white;
+    }
+
+    .footer-contact li {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      color: rgba(255,255,255,0.7);
+    }
+
+    .footer-contact span {
+      color: rgba(255,255,255,0.7);
+    }
+
+    .footer-bottom {
+      border-top: 1px solid rgba(255,255,255,0.1);
+      padding-top: 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+
+    .footer-bottom p {
+      color: rgba(255,255,255,0.7);
+      font-size: 0.9rem;
+    }
+
+    .footer-bottom a {
+      color: rgba(255,255,255,0.7);
+      text-decoration: underline;
+      transition: color 0.3s;
+    }
+
+    .footer-bottom a:hover {
+      color: white;
+    }
+
+    /* RESPONSIVE */
+    @media (max-width: 1200px) {
+      .pricing-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (max-width: 768px) {
+      .main-nav {
+        position: fixed;
+        top: 80px;
+        left: -100%;
+        width: 100%;
+        height: calc(100vh - 80px);
+        background: white;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 2rem;
+        gap: 0;
+        box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+        transition: left 0.3s ease;
+      }
+      
+      .main-nav.active {
+        left: 0;
+      }
+      
+      .main-nav a {
+        width: 100%;
+        padding: 1rem 0;
+        border-bottom: 1px solid var(--border-color);
+      }
+      
+      .main-nav a::after {
+        display: none;
+      }
+      
+      .mobile-menu-toggle {
+        display: flex;
+      }
+
+      .pricing-hero h1 {
+        font-size: 2.5rem;
+      }
+
+      .section-header h2 {
+        font-size: 2rem;
+      }
+
+      .pricing-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .footer-grid {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+      }
+
+      .footer-bottom {
+        flex-direction: column;
+        gap: 1rem;
+        text-align: center;
+      }
+
+      .cta-section h2 {
+        font-size: 2rem;
+      }
+
+      .cta-buttons {
+        flex-direction: column;
+        align-items: stretch;
+      }
+
+      .factors-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="site-header" id="header">
+    <div class="header-container">
+      <a href="https://brocksecurity.net" class="logo-link">
+        <img src="images/logo.png" alt="Brock Security Logo" class="logo-img">
+        <span class="logo-text">Brock Security</span>
+      </a>
+      
+      <button class="mobile-menu-toggle" aria-label="Toggle menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      
+      <nav class="main-nav">
+        <a href="https://brocksecurity.net">Home</a>
+        <a href="https://brocksecurity.net#about">About</a>
+        <a href="https://brocksecurity.net#services">Services</a>
+        <a href="https://brocksecurity.net#why-us">Why Us</a>
+        <a href="https://brocksecurity.net#testimonials">Testimonials</a>
+        <a href="https://brocksecurity.net/pricing.html">Packages & Pricing</a>
+        <a href="https://brocksecurity.net#contact" class="nav-cta">Get Free Quote</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- PRICING HERO -->
+  <section class="pricing-hero">
+    <div class="container">
+      <h1>Packages & Pricing</h1>
+      <p>Professional installation packages for homes and businesses across Eastern Kentucky. No hidden fees, no surprises—just quality security solutions you can trust.</p>
+      <div class="pricing-highlight">
+        <strong>🎁 Special Offer</strong>
+        <div>Get your FREE on-site security assessment—no obligation, no pressure</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PRICING PACKAGES -->
+  <section class="pricing-section">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-badge">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z"/>
+          </svg>
+          <span>Pricing Packages</span>
+        </div>
+        <h2>Choose Your Security Solution</h2>
+        <p>All packages include professional installation, equipment, and lifetime support</p>
+      </div>
+
+      <div class="pricing-grid">
+        <!-- 4 CAMERA SYSTEM -->
+        <div class="pricing-card featured">
+          <div class="pricing-badge blue">Most Popular</div>
+          <img src="images/4-camera-system.jpg" alt="4 Camera Security System" class="camera-image">
+          
+          <div class="pricing-card-header">
+            <h3>4 Camera System</h3>
+          </div>
+          
+          <ul class="pricing-features">
+            <li>
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/>
+              </svg>
+              <span>4 HD Security Cameras</span>
+            </li>
+            <li>
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/>
+              </svg>
+              <span>8-Channel NVR with 2TB HDD Built-in</span>
+            </li>
+            <li>
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/>
+              </svg>
+              <span>Person/Vehicle/Animal Detection</span>
+            </li>
+            <li>
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/>
+              </svg>
+              <span>24/7 Recording, No Monthly Fee</span>
+            </li>
+            <li>
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/>
+              </svg>
+              <span>Mobile App Access</span>
+            </li>
+            <li>
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/>
+              </svg>
+              <span>Professional Installation</span>
+            </li>
+            <li>
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/>
+              </svg>
+              <span>1 Year Warranty</span>
+            </li>
+          </ul>
+
+          <div class="price">
+            <div class="price-label">Starting at</div>
+            <div class="price-amount">$48</div>
+            <div class="price-period">/month</div>
+          </div>
+          <div class="price-note">Or pay $999.99 one-time</div>
+
+          <a href="https://brocksecurity.net#contact" class="btn-pricing">Free Quote</a>
+        </div>
+
+        <!-- 6 CAMERA SYSTEM -->
+        <div class="pricing-card">
+          <img src="images/6-camera-system.jpg" alt="6 Camera Security System" class="camera-image">
+          
+          <div class="pricing-card-header">
+            <h3>6 Camera System</h3>
+          </div>
+          
+          <ul class="pricing-features">
+            <li>
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/>
+              </svg>
+              <span>6 HD Security Cameras</span>
+            </li>
+            <li>
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/>
+              </svg>
+              <span>8-Channel NVR with 2TB HDD Built-in</span>
+            </li>
+            <li>
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/>
+              </svg>
+              <span>Person/Vehicle/Animal Detection</span>
+            </li>
+            <li>
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/>
+              </svg>
+              <span>24/7 Recording, No Monthly Fee</span>
+            </li>
+            <li>
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/>
+              </svg>
+              <span>Mobile App Access</span>
+            </li>
+            <li>
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/>
+              </svg>
+              <span>Professional Installation</span>
+            </li>
+            <li>
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/>
+              </svg>
+              <span>1 Year Warranty</span>
+            </li>
+          </ul>
+
+          <div class="price">
+            <div class="price-label">Starting at</div>
+            <div class="price-amount">$63</div>
+            <div class="price-period">/month</div>
+          </div>
+          <div class="price-note">Or pay $1,299.99 one-time</div>
+
+          <a href="https://brocksecurity.net#contact" class="btn-pricing">Free Quote</a>
+        </div>
+
+        <!-- 8 CAMERA SYSTEM -->
+        <div class="pricing-card best-value">
+          <div class="pricing-badge green">Best Value</div>
+          <img src="images/8-camera-system.jpg" alt="8 Camera Security System" class="camera-image">
+          
+          <div class="pricing-card-header">
+            <h3>8 Camera System</h3>
+          </div>
+          
+          <ul class="pricing-features">
+            <li>
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/>
+              </svg>
+              <span>8 HD Security Cameras</span>
+            </li>
+            <li>
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/>
+              </svg>
+              <span>16-Channel NVR with 4TB HDD Built-in</span>
+            </li>
+            <li>
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/>
+              </svg>
+              <span>Person/Vehicle/Animal Detection</span>
+            </li>
+            <li>
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/>
+              </svg>
+              <span>24/7 Recording, No Monthly Fee</span>
+            </li>
+            <li>
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/>
+              </svg>
+              <span>Mobile App Access</span>
+            </li>
+            <li>
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/>
+              </svg>
+              <span>Professional Installation</span>
+            </li>
+            <li>
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/>
+              </svg>
+              <span>1 Year Warranty</span>
+            </li>
+          </ul>
+
+          <div class="price">
+            <div class="price-label">Starting at</div>
+            <div class="price-amount">$79</div>
+            <div class="price-period">/month</div>
+          </div>
+          <div class="price-note">Or pay $1,649.99 one-time</div>
+
+          <a href="https://brocksecurity.net#contact" class="btn-pricing green">Free Quote</a>
+        </div>
+
+        <!-- CUSTOM SYSTEM -->
+        <div class="pricing-card">
+          <img src="images/custom-system.jpg" alt="Custom Camera Security System" class="camera-image">
+          
+          <div class="pricing-card-header">
+            <h3>Custom System</h3>
+          </div>
+          
+          <ul class="pricing-features">
+            <li>
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/>
+              </svg>
+              <span>Up to 36 Cameras</span>
+            </li>
+            <li>
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/>
+              </svg>
+              <span>Up to a 36-Channel</span>
+            </li>
+            <li>
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/>
+              </svg>
+              <span>Up to 48TB HDD</span>
+            </li>
+            <li>
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/>
+              </svg>
+              <span>Person/Vehicle/Animal Detection</span>
+            </li>
+            <li>
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/>
+              </svg>
+              <span>24/7 Recording, No Monthly Fee</span>
+            </li>
+            <li>
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/>
+              </svg>
+              <span>Mobile App Access</span>
+            </li>
+            <li>
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/>
+              </svg>
+              <span>Professional Installation</span>
+            </li>
+            <li>
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/>
+              </svg>
+              <span>1 Year Warranty</span>
+            </li>
+          </ul>
+
+          <div class="price">
+            <div class="price-label">Custom Quote</div>
+            <div class="price-amount">Contact</div>
+            <div class="price-period">Us</div>
+          </div>
+          <div class="price-note">Tailored to your needs</div>
+
+          <a href="https://brocksecurity.net#contact" class="btn-pricing">Free Quote</a>
+        </div>
+      </div>
+
+      <!-- FINANCING DISCLAIMER -->
+      <div style="text-align: center; margin-top: 3rem; padding: 2rem; background: rgba(25, 117, 176, 0.05); border-radius: 10px; border-left: 4px solid var(--primary-color);">
+        <p style="color: var(--text-light); font-size: 0.95rem; line-height: 1.8; margin: 0;">
+          <strong>Financing Disclosure:</strong> Monthly payment options are available with approved credit through our financing partners. Terms and conditions apply. Interest rates and approval are subject to credit qualification. One-time payment options are also available for all packages.
+        </p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- PRICING FACTORS -->
+  <section class="factors-section">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-badge">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M11 17h2v-6h-2v6zm1-15C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zM11 9h2V7h-2v2z"/>
+          </svg>
+          <span>What Affects Pricing</span>
+        </div>
+        <h2>Understanding Your Investment</h2>
+        <p>Several factors influence the final cost of your security camera system</p>
+      </div>
+
+      <div class="factors-grid">
+        <div class="factor-card">
+          <div class="factor-card-header">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M12 2L2 7v10c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V7l-10-5z"/>
+            </svg>
+            <h4>Number of Cameras</h4>
+          </div>
+          <p>More cameras mean broader coverage and higher costs. We help you find the optimal number to cover all critical areas without overspending.</p>
+        </div>
+
+        <div class="factor-card">
+          <div class="factor-card-header">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M21 6h-2V3a1 1 0 0 0-1-1H6a1 1 0 0 0-1 1v3H3a1 1 0 0 0-1 1v13a1 1 0 0 0 1 1h18a1 1 0 0 0 1-1V7a1 1 0 0 0-1-1zm-5 6h-3v3h-2v-3H8v-2h3V8h2v3h3v2z"/>
+            </svg>
+            <h4>Camera Quality</h4>
+          </div>
+          <p>Higher resolution cameras (4K vs 1080p) provide clearer images but cost more. We'll recommend the right resolution based on your monitoring needs.</p>
+        </div>
+
+        <div class="factor-card">
+          <div class="factor-card-header">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M20 2H4c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zM8 20H4v-4h4v4zm0-6H4v-4h4v4zm0-6H4V4h4v4zm6 12h-4v-4h4v4zm0-6h-4v-4h4v4zm0-6h-4V4h4v4zm6 12h-4v-4h4v4zm0-6h-4v-4h4v4zm0-6h-4V4h4v4z"/>
+            </svg>
+            <h4>Storage Capacity</h4>
+          </div>
+          <p>Larger hard drives store more footage. We calculate the right storage based on how many cameras you have and how long you want to keep recordings.</p>
+        </div>
+
+        <div class="factor-card">
+          <div class="factor-card-header">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/>
+            </svg>
+            <h4>Installation Complexity</h4>
+          </div>
+          <p>Property size, wall types, cable routing, and mounting locations affect installation time and cost. We provide accurate estimates after a site visit.</p>
+        </div>
+
+        <div class="factor-card">
+          <div class="factor-card-header">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M12 2l-5.5 9h11L12 2zm0 3.84L13.93 9h-3.87L12 5.84zM17.5 13c-2.49 0-4.5 2.01-4.5 4.5s2.01 4.5 4.5 4.5 4.5-2.01 4.5-4.5-2.01-4.5-4.5-4.5zm0 7c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5zM3 21.5h8v-8H3v8zm2-6h4v4H5v-4z"/>
+            </svg>
+            <h4>Additional Features</h4>
+          </div>
+          <p>Advanced features like AI detection, two-way audio, PTZ cameras, or smart home integration add to the total investment but provide enhanced functionality.</p>
+        </div>
+
+        <div class="factor-card">
+          <div class="factor-card-header">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M18 8h-1V6c0-2.76-2.24-5-5-5S7 3.24 7 6v2H6c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V10c0-1.1-.9-2-2-2zm-6 9c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2zM9 8V6c0-1.66 1.34-3 3-3s3 1.34 3 3v2H9z"/>
+            </svg>
+            <h4>Warranty & Support</h4>
+          </div>
+          <p>All our systems include lifetime support at no extra cost. We're always available to help troubleshoot, adjust settings, or answer questions about your system.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ SECTION -->
+  <section class="faq-section">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-badge">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M11 17h2v-6h-2v6zm1-15C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zM11 9h2V7h-2v2z"/>
+          </svg>
+          <span>Common Questions</span>
+        </div>
+        <h2>Frequently Asked Questions</h2>
+        <p>Everything you need to know about security camera pricing</p>
+      </div>
+
+      <div class="faq-list">
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>Are there any monthly fees?</span>
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M7 10l5 5 5-5z"/>
+            </svg>
+          </button>
+          <div class="faq-answer">
+            <div class="faq-answer-content">
+              <strong>No monthly fees!</strong> Our systems record locally to your DVR/NVR, so there are no cloud storage subscriptions required. You own your system outright, and you can view your cameras from anywhere using the free mobile app. The only ongoing cost would be your internet connection if you want remote viewing.
+            </div>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>What's included in the installation price?</span>
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M7 10l5 5 5-5z"/>
+            </svg>
+          </button>
+          <div class="faq-answer">
+            <div class="faq-answer-content">
+              The installation price includes everything: cameras, DVR/NVR system, hard drive for storage, all cables and mounting hardware, professional installation by licensed technicians, complete system setup and configuration, mobile app installation and training, and lifetime technical support. There are no hidden costs.
+            </div>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>How long does installation take?</span>
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M7 10l5 5 5-5z"/>
+            </svg>
+          </button>
+          <div class="faq-answer">
+            <div class="faq-answer-content">
+              Most residential installations take 4-8 hours depending on the number of cameras and property layout. Commercial installations may take 1-3 days. We work efficiently and cleanly, and we'll give you an accurate time estimate during your free consultation based on your specific property.
+            </div>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>Can I view my cameras from my phone?</span>
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M7 10l5 5 5-5z"/>
+            </svg>
+          </button>
+          <div class="faq-answer">
+            <div class="faq-answer-content">
+              Yes! All our systems come with free mobile apps (iOS and Android) that let you view live footage, review recordings, receive motion alerts, and control your cameras from anywhere with an internet connection. We'll set up the app and show you how to use it during installation.
+            </div>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>How long are recordings stored?</span>
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M7 10l5 5 5-5z"/>
+            </svg>
+          </button>
+          <div class="faq-answer">
+            <div class="faq-answer-content">
+              Storage duration depends on the number of cameras, resolution, and hard drive size. Typically, our systems store 2-4 weeks of continuous footage. Once the drive is full, the oldest recordings are automatically overwritten. Need longer storage? We can upgrade to larger hard drives or set up motion-only recording.
+            </div>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>Do you offer financing?</span>
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M7 10l5 5 5-5z"/>
+            </svg>
+          </button>
+          <div class="faq-answer">
+            <div class="faq-answer-content">
+              Yes! We work with several financing partners to offer flexible payment plans. During your free consultation, we can discuss financing options that fit your budget. Our goal is to make professional security affordable for everyone.
+            </div>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>What's your warranty policy?</span>
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M7 10l5 5 5-5z"/>
+            </svg>
+          </button>
+          <div class="faq-answer">
+            <div class="faq-answer-content">
+              All equipment comes with manufacturer warranties (typically 1-3 years), and our installation work is guaranteed. Most importantly, you get lifetime technical support from us—if you ever have questions, need help adjusting settings, or experience issues, we're just a phone call away at no extra charge.
+            </div>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>Can I add more cameras later?</span>
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M7 10l5 5 5-5z"/>
+            </svg>
+          </button>
+          <div class="faq-answer">
+            <div class="faq-answer-content">
+              Absolutely! We design all our systems with expansion in mind. Your DVR/NVR will have extra channels available, so adding cameras later is simple and affordable. Just call us and we'll add additional cameras to your existing system anytime.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA SECTION -->
+  <section id="contact" class="cta-section">
+    <div class="container">
+      <h2>Ready to Secure Your Property?</h2>
+      <p>Get your FREE on-site security assessment—no obligation, no pressure. We'll evaluate your property and provide a detailed, transparent quote.</p>
+      <div class="cta-buttons">
+        <a href="tel:6062755449" class="btn-cta btn-cta-primary">
+          📞 Call (606) 275-5449
+        </a>
+        <a href="https://brocksecurity.net#contact" class="btn-cta btn-cta-secondary">
+          📧 Request Free Quote
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <img src="images/logo.png" alt="Brock Security" class="footer-logo">
+          <h3>Brock Security</h3>
+          <p>Professional security camera installation serving Pikeville, Hazard, Prestonsburg, and all of Eastern Kentucky.</p>
+          <div class="social-links">
+            <a href="https://www.facebook.com/brocksecurity" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+              </svg>
+            </a>
+            <a href="https://share.google/6x6M1CbjrCRtNt6Cy" target="_blank" rel="noopener noreferrer" aria-label="Google Business">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M12.48 10.92v3.28h7.84c-.24 1.84-.853 3.187-1.787 4.133-1.147 1.147-2.933 2.4-6.053 2.4-4.827 0-8.6-3.893-8.6-8.72s3.773-8.72 8.6-8.72c2.6 0 4.507 1.027 5.907 2.347l2.307-2.307C18.747 1.44 16.133 0 12.48 0 5.867 0 .307 5.387.307 12s5.56 12 12.173 12c3.573 0 6.267-1.173 8.373-3.36 2.16-2.16 2.84-5.213 2.84-7.667 0-.76-.053-1.467-.173-2.053H12.48z"/>
+              </svg>
+            </a>
+            <a href="https://www.homeadvisor.com/rated.BrockSecurity.101205399.html" target="_blank" rel="noopener noreferrer" aria-label="HomeAdvisor">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+        
+        <div class="footer-links">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="https://brocksecurity.net">Home</a></li>
+            <li><a href="https://brocksecurity.net#about">About</a></li>
+            <li><a href="https://brocksecurity.net#services">Services</a></li>
+            <li><a href="https://brocksecurity.net#why-us">Why Us</a></li>
+            <li><a href="https://brocksecurity.net#testimonials">Testimonials</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-contact">
+          <h4>Contact</h4>
+          <ul>
+            <li><a href="tel:6062755449">(606) 275-5449</a></li>
+            <li><a href="mailto:support@brocksecurity.net">support@brocksecurity.net</a></li>
+            <li><span>Eastern Kentucky</span></li>
+          </ul>
+        </div>
+      </div>
+      
+      <div class="footer-bottom">
+        <p>&copy; 2025 Brock Security. All rights reserved.</p>
+        <p><a href="privacy-policy.html">Privacy Policy</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // FAQ Accordion
+    document.querySelectorAll('.faq-question').forEach(button => {
+      button.addEventListener('click', () => {
+        const faqItem = button.parentElement;
+        const answer = faqItem.querySelector('.faq-answer');
+        const isOpen = button.classList.contains('active');
+        
+        // Close all FAQs
+        document.querySelectorAll('.faq-question').forEach(btn => {
+          btn.classList.remove('active');
+          btn.parentElement.querySelector('.faq-answer').style.maxHeight = '0';
+        });
+        
+        // Open clicked FAQ if it was closed
+        if (!isOpen) {
+          button.classList.add('active');
+          answer.style.maxHeight = answer.scrollHeight + 'px';
+        }
+      });
+    });
+
+    // Mobile menu toggle
+    const mobileToggle = document.querySelector('.mobile-menu-toggle');
+    const mainNav = document.querySelector('.main-nav');
+    
+    if (mobileToggle && mainNav) {
+      mobileToggle.addEventListener('click', function() {
+        mobileToggle.classList.toggle('active');
+        mainNav.classList.toggle('active');
+      });
+      
+      // Close mobile menu when clicking on a link
+      const navLinks = mainNav.querySelectorAll('a');
+      navLinks.forEach(link => {
+        link.addEventListener('click', function() {
+          mobileToggle.classList.remove('active');
+          mainNav.classList.remove('active');
+        });
+      });
+      
+      // Close mobile menu when clicking outside
+      document.addEventListener('click', function(e) {
+        if (!mobileToggle.contains(e.target) && !mainNav.contains(e.target)) {
+          mobileToggle.classList.remove('active');
+          mainNav.classList.remove('active');
+        }
+      });
+    }
+
+    // Header scroll effect
+    const header = document.querySelector('.site-header');
+    let lastScroll = 0;
+    
+    window.addEventListener('scroll', () => {
+      const currentScroll = window.pageYOffset;
+      
+      if (currentScroll > 50) {
+        header.classList.add('scrolled');
+      } else {
+        header.classList.remove('scrolled');
+      }
+      
+      lastScroll = currentScroll;
+    });
+
+    // Smooth scroll for anchor links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        const href = this.getAttribute('href');
+        if (href === '#' || href === '#contact') {
+          e.preventDefault();
+          const target = document.querySelector(href);
+          if (target) {
+            const headerOffset = 80;
+            const elementPosition = target.getBoundingClientRect().top;
+            const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+
+            window.scrollTo({
+              top: offsetPosition,
+              behavior: 'smooth'
+            });
+          }
+        }
+      });
+    });
+  </script>
+</body>
+</html>
