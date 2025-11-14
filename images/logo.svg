@@ -1,0 +1,18 @@
+<svg width="200" height="50" viewBox="0 0 200 50" xmlns="http://www.w3.org/2000/svg">
+  <!-- Shield icon -->
+  <g transform="translate(5, 5)">
+    <path d="M20 0L0 7.5v15c0 8.325 5.76 16.11 13.5 18 7.74-1.89 13.5-9.675 13.5-18v-15L20 0z"
+          fill="#1975B0"
+          stroke="#144070"
+          stroke-width="0.5"/>
+    <path d="M20 5v11.985h10.5c-.795 6.18-4.92 11.685-10.5 13.41V17H9V11.45l11-4.665V16.97z"
+          fill="white"
+          opacity="0.9"/>
+  </g>
+
+  <!-- Text: "Brock Security" -->
+  <text x="50" y="30" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif"
+        font-size="20" font-weight="700" fill="#1975B0">
+    Brock Security
+  </text>
+</svg>

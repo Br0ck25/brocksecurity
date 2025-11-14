@@ -1,0 +1,15 @@
+<svg width="64" height="64" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="64" height="64" fill="#1975B0" rx="8"/>
+
+  <!-- Shield icon centered -->
+  <g transform="translate(16, 12)">
+    <path d="M16 0L0 6v12c0 6.66 4.608 12.888 10.8 14.4 6.192-1.512 10.8-7.74 10.8-14.4V6L16 0z"
+          fill="white"
+          stroke="#144070"
+          stroke-width="1"/>
+    <path d="M16 4v9.588h8.4c-.636 4.944-3.936 9.348-8.4 10.728V13.6H7.2V9.16l8.8-3.732V13.576z"
+          fill="#1975B0"
+          opacity="0.8"/>
+  </g>
+</svg>

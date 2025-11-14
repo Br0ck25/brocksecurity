@@ -25,10 +25,22 @@
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Security Camera Installation Eastern Kentucky | Brock Security">
   <meta name="twitter:description" content="Professional security camera installation serving all of Eastern Kentucky. Licensed, insured, same-week service.">
-  
+
+  <!-- Canonical URL -->
+  <link rel="canonical" href="https://brocksecurity.net/">
+
+  <!-- Security & Performance -->
+  <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+
+  <!-- Resource Hints -->
+  <link rel="preconnect" href="https://script.google.com">
+  <link rel="dns-prefetch" href="https://script.google.com">
+
   <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
   <link rel="icon" type="image/png" href="images/favicon.png">
-  
+  <link rel="apple-touch-icon" sizes="180x180" href="images/favicon.png">
+
   <link rel="stylesheet" href="style.css">
   
   <!-- Enhanced Structured Data for Local SEO -->
@@ -164,21 +176,24 @@
 </head>
 <body>
 
+  <!-- Skip Navigation for Accessibility -->
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
   <!-- HEADER -->
-  <header class="site-header" id="header">
+  <header class="site-header" id="header" role="banner">
     <div class="header-container">
-      <a href="#" class="logo-link">
-        <img src="images/logo.png" alt="Brock Security Logo" class="logo-img">
+      <a href="/" class="logo-link" aria-label="Brock Security Home">
+        <img src="images/logo.svg" alt="Brock Security Logo" class="logo-img" width="200" height="50">
         <span class="logo-text">Brock Security</span>
       </a>
-      
-      <button class="mobile-menu-toggle" aria-label="Toggle menu">
+
+      <button class="mobile-menu-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
         <span></span>
         <span></span>
         <span></span>
       </button>
-      
-      <nav class="main-nav">
+
+      <nav class="main-nav" role="navigation" aria-label="Main navigation">
         <a href="#home">Home</a>
         <a href="#about">About</a>
         <a href="#services">Services</a>
@@ -191,7 +206,8 @@
   </header>
 
   <!-- HERO SECTION -->
-  <section id="home" class="hero-section">
+  <main id="main-content">
+  <section id="home" class="hero-section" aria-label="Hero section">
     <div class="hero-background">
       <!-- Replace this with actual image: style="background-image: url('images/hero-bg.jpg')" -->
       <div class="hero-image-placeholder">
@@ -253,7 +269,7 @@
   </section>
 
   <!-- ABOUT SECTION -->
-  <section id="about" class="about-section">
+  <section id="about" class="about-section" aria-labelledby="about-heading">
     <div class="container">
       <div class="about-grid">
         <div class="about-content">
@@ -264,7 +280,7 @@
             <span>About Us</span>
           </div>
           
-          <h2>Protecting Our Community, One Camera at a Time</h2>
+          <h2 id="about-heading">Protecting Our Community, One Camera at a Time</h2>
           
           <p>Proudly rooted in Eastern Kentucky, Brock Security is a locally owned and operated company built on hard work, honest service, and a deep connection to our community. We're dedicated to protecting what matters most — your family, your business, and your peace of mind.</p>
           
@@ -341,7 +357,7 @@
   </section>
 
   <!-- SERVICES SECTION -->
-  <section id="services" class="services-section">
+  <section id="services" class="services-section" aria-labelledby="services-heading">
     <div class="container">
       <div class="section-header">
         <div class="section-badge">
@@ -350,7 +366,7 @@
           </svg>
           <span>Our Services</span>
         </div>
-        <h2>Complete Security Camera Solutions</h2>
+        <h2 id="services-heading">Complete Security Camera Solutions</h2>
         <p>From installation to maintenance, we provide comprehensive security services tailored to your needs.</p>
       </div>
       
@@ -428,7 +444,7 @@
   </section>
 
   <!-- WHY CHOOSE US -->
-  <section id="why-us" class="why-section">
+  <section id="why-us" class="why-section" aria-labelledby="why-us-heading">
     <div class="container">
       <div class="section-header">
         <div class="section-badge">
@@ -437,7 +453,7 @@
           </svg>
           <span>Why Choose Us</span>
         </div>
-        <h2>Why Kentucky Trusts Brock Security</h2>
+        <h2 id="why-us-heading">Why Kentucky Trusts Brock Security</h2>
         <p>We're not a national chain – we're your local security experts who live and work right here.</p>
       </div>
       
@@ -485,7 +501,7 @@
   </section>
 
   <!-- TESTIMONIALS -->
-  <section id="testimonials" class="testimonials-section">
+  <section id="testimonials" class="testimonials-section" aria-labelledby="testimonials-heading">
     <div class="container">
       <div class="section-header">
         <div class="section-badge">
@@ -494,7 +510,7 @@
           </svg>
           <span>Testimonials</span>
         </div>
-        <h2>What Our Customers Say</h2>
+        <h2 id="testimonials-heading">What Our Customers Say</h2>
         <p>Real reviews from real customers in Eastern Kentucky</p>
       </div>
       
@@ -542,7 +558,7 @@
   </section>
 
   <!-- CONTACT SECTION -->
-  <section id="contact" class="contact-section">
+  <section id="contact" class="contact-section" aria-labelledby="contact-heading">
     <div class="container">
       <div class="contact-grid">
         <div class="contact-info">
@@ -553,7 +569,7 @@
             <span>Get Started</span>
           </div>
           
-          <h2>Get Your Free Security Assessment</h2>
+          <h2 id="contact-heading">Get Your Free Security Assessment</h2>
           <p>Serving Pikeville, Hazard, Prestonsburg, Paintsville, Whitesburg, Harlan, London, Somerset, Corbin, and all of Eastern Kentucky. Fill out the form and we'll contact you within 24 hours to schedule your free, no-obligation on-site estimate.</p>
           
           <div class="contact-details">
@@ -600,26 +616,42 @@
         </div>
         
         <div class="contact-form-wrapper">
-          <form id="leadForm" class="contact-form">
-            <input type="text" name="name" placeholder="Your Name *" required>
-            <input type="tel" name="phone" placeholder="Phone Number *" required>
-            <input type="email" name="email" placeholder="Email Address *" required>
-            <input type="text" name="address" placeholder="Property Address">
-            <textarea name="message" rows="4" placeholder="Tell us about your security needs..."></textarea>
+          <form id="leadForm" class="contact-form" aria-label="Contact form">
+            <div class="form-group">
+              <label for="contact-name">Your Name <span aria-label="required">*</span></label>
+              <input type="text" id="contact-name" name="name" placeholder="John Doe" required aria-required="true">
+            </div>
+            <div class="form-group">
+              <label for="contact-phone">Phone Number <span aria-label="required">*</span></label>
+              <input type="tel" id="contact-phone" name="phone" placeholder="(606) 275-5449" required aria-required="true">
+            </div>
+            <div class="form-group">
+              <label for="contact-email">Email Address <span aria-label="required">*</span></label>
+              <input type="email" id="contact-email" name="email" placeholder="you@example.com" required aria-required="true">
+            </div>
+            <div class="form-group">
+              <label for="contact-address">Property Address</label>
+              <input type="text" id="contact-address" name="address" placeholder="123 Main St, Pikeville, KY">
+            </div>
+            <div class="form-group">
+              <label for="contact-message">Tell us about your security needs</label>
+              <textarea id="contact-message" name="message" rows="4" placeholder="I'm interested in security cameras for my home..."></textarea>
+            </div>
             <button type="submit" class="btn-submit">Get Your Free Quote</button>
-            <p id="formMsg" class="form-message"></p>
+            <div id="formMsg" class="form-message" role="status" aria-live="polite"></div>
           </form>
         </div>
       </div>
     </div>
   </section>
+  </main>
 
   <!-- FOOTER -->
-  <footer class="site-footer">
+  <footer class="site-footer" role="contentinfo">
     <div class="container">
       <div class="footer-grid">
         <div class="footer-brand">
-          <img src="images/logo.png" alt="Brock Security" class="footer-logo">
+          <img src="images/logo.svg" alt="Brock Security Logo" class="footer-logo" width="200" height="50">
           <h3>Brock Security</h3>
           <p>Professional security camera installation serving Pikeville, Hazard, Prestonsburg, and all of Eastern Kentucky.</p>
           <div class="social-links">

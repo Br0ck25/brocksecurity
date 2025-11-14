@@ -4,9 +4,11 @@ document.addEventListener('DOMContentLoaded', function() {
   // Mobile menu toggle
   const mobileToggle = document.querySelector('.mobile-menu-toggle');
   const mainNav = document.querySelector('.main-nav');
-  
+
   if (mobileToggle && mainNav) {
     mobileToggle.addEventListener('click', function() {
+      const isExpanded = mobileToggle.getAttribute('aria-expanded') === 'true';
+      mobileToggle.setAttribute('aria-expanded', !isExpanded);
       mobileToggle.classList.toggle('active');
       mainNav.classList.toggle('active');
     });
@@ -63,8 +65,8 @@ document.addEventListener('DOMContentLoaded', function() {
     lastScroll = currentScroll;
   });
 
-  // Phone number formatting
-  const phoneInput = document.querySelector('input[name="phone"]');
+  // Phone number formatting with validation
+  const phoneInput = document.querySelector('#contact-phone');
   if (phoneInput) {
     phoneInput.addEventListener('input', function(e) {
       let value = e.target.value.replace(/\D/g, '');
@@ -78,6 +80,31 @@ document.addEventListener('DOMContentLoaded', function() {
         }
       }
       e.target.value = value;
+    });
+
+    // Validate phone number on blur
+    phoneInput.addEventListener('blur', function(e) {
+      const cleanValue = e.target.value.replace(/\D/g, '');
+      if (cleanValue.length > 0 && cleanValue.length !== 10) {
+        e.target.setCustomValidity('Please enter a valid 10-digit phone number');
+        e.target.reportValidity();
+      } else {
+        e.target.setCustomValidity('');
+      }
+    });
+  }
+
+  // Email validation enhancement
+  const emailInput = document.querySelector('#contact-email');
+  if (emailInput) {
+    emailInput.addEventListener('blur', function(e) {
+      const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+      if (e.target.value && !emailPattern.test(e.target.value)) {
+        e.target.setCustomValidity('Please enter a valid email address');
+        e.target.reportValidity();
+      } else {
+        e.target.setCustomValidity('');
+      }
     });
   }
 
@@ -143,6 +170,33 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   }
 
+  // Lazy loading for images
+  if ('loading' in HTMLImageElement.prototype) {
+    // Browser supports native lazy loading
+    const images = document.querySelectorAll('img[data-src]');
+    images.forEach(img => {
+      img.src = img.dataset.src;
+      img.removeAttribute('data-src');
+    });
+  } else {
+    // Fallback for older browsers using Intersection Observer
+    const lazyImageObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          const img = entry.target;
+          if (img.dataset.src) {
+            img.src = img.dataset.src;
+            img.removeAttribute('data-src');
+            lazyImageObserver.unobserve(img);
+          }
+        }
+      });
+    });
+
+    const lazyImages = document.querySelectorAll('img[data-src]');
+    lazyImages.forEach(img => lazyImageObserver.observe(img));
+  }
+
   // Intersection Observer for animations
   const observerOptions = {
     threshold: 0.1,
@@ -154,6 +208,7 @@ document.addEventListener('DOMContentLoaded', function() {
       if (entry.isIntersecting) {
         entry.target.style.opacity = '1';
         entry.target.style.transform = 'translateY(0)';
+        observer.unobserve(entry.target); // Stop observing once animated
       }
     });
   }, observerOptions);
